@@ -1,0 +1,70 @@
+from sklearn import datasets
+from sklearn.model_selection import train_test_split
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import accuracy_score
+
+# 붓꽃 데이터셋 로드
+iris = datasets.load_iris()
+X = iris.data
+y = iris.target
+
+
+iris = datasets.load_iris()
+X = iris.data
+y
+
+iris = datasets.load_iris()
+X = iris.data
+
+iris = datasets.load_iris
+
+iris = datasets.load_
+
+iris = datasets.load
+
+iris
+# 데이터셋을 훈련용과 테스트용으로 분할
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size
+
+X_train, X_test, y_train, y_test = train_test_split(X, y
+
+X_train, X_test, y_train, y_test = train_test_split(X
+
+X_train, X_test, y_train,
+
+X_train, X_test, y_train
+
+X_train, X_test, y
+
+X_train, X_test
+
+X_train
+
+X
+0.2, random_state=42)
+
+# K-Nearest Neighbors 분류기 모델 생성
+knn = KNeighborsClassifier(n_neighbors=
+knn = KNeighborsClassifier(n_neighbors
+
+k
+3)
+
+# 모델 훈련
+knn.fit(X_train, y_train)
+
+
+knn.fit(X_train,
+
+k
+# 테스트 데이터셋에 대한 예측
+y_pred = knn.predict(X_test)
+
+
+y
+# 정확도 평가
+accuracy = accuracy_score(y_test, y_pred)
+
+accuracy
+print("Accuracy:", accuracy)
